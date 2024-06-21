@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+using namespace Progress;
+
 void Bar::Update(PercentComplete const& message)
 {
 	int progress = message / 10;

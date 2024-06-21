@@ -1,5 +1,7 @@
 #include "Task.hpp"
 
+using namespace Progress;
+
 void Task::Subscribe(std::shared_ptr<ISubscriber<PercentComplete>> subscriber)
 {
 	subscribers.insert(subscriber);

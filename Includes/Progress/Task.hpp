@@ -5,6 +5,9 @@
 
 #include <unordered_set>
 
+namespace Progress
+{
+
 using PercentComplete = int;
 
 class Task final : public IPublisher<PercentComplete>
@@ -16,3 +19,5 @@ public:
 private:
 	std::unordered_set<std::shared_ptr<ISubscriber<PercentComplete>>> subscribers;
 };
+
+}

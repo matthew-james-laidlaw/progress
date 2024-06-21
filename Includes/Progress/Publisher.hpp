@@ -2,6 +2,9 @@
 
 #include <memory>
 
+namespace Progress
+{
+
 template <typename Messagetype>
 class ISubscriber;
 
@@ -14,3 +17,5 @@ public:
 	virtual void Unsubscribe(std::shared_ptr<ISubscriber<MessageType>> subscriber) = 0;
 	virtual void Notify(MessageType const& message) = 0;
 };
+
+}
